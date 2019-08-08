@@ -100,4 +100,20 @@
         </LinearLayout>
     </androidx.appcompat.widget.LinearLayoutCompat>
 
+
+        <com.sdsmdg.harjot.crollerTest.Croller
+            android:id="@+id/croller"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="100dp"
+            app:back_circle_color="#282B1B"
+            app:indicator_color="@android:color/white"
+            app:main_circle_color="#9CC63D"
+            app:max="50"
+            app:progress="30"
+            app:progress_primary_color="#9CC63D"
+            app:progress_secondary_color="#8d946f"/>
+
 </RelativeLayout>
