@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_color_blue">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_yellow_top" />
+
+    <com.sdsmdg.harjot.crollerTest.Croller
+        android:id="@+id/croller"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="30dp"
+        app:back_circle_color="@android:color/transparent"
+        app:indicator_color="#FEC400"
+        app:main_circle_color="@android:color/transparent"
+        app:max="50"
+        app:progress="20" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/img_face"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="70dp"
+        android:src="@drawable/ic_face" />
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/bottom_button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/app_color_yellow"
+            android:layout_weight="1"
+            android:text="Forward" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/button_unselected"
+            android:text="Backward" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/button_unselected"
+            android:layout_weight="1"
+            android:text="STOP" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:id="@+id/selectDevice"
+        android:clickable="true"
+        android:layout_marginStart="10dp"
+        android:layout_below="@id/img_face">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_bluetooth" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Select Device"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:layout_marginStart="10dp"
+            android:textColor="@android:color/white" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.AppCompatSeekBar
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_above="@+id/bottom_button_layout"
+        android:layout_marginBottom="-1dp"
+        android:background="#FFFFFF"
+        android:backgroundTint="@android:color/transparent"
+        android:max="50"
+        android:min="1"
+        android:progress="20"
+        android:progressDrawable="@color/button_unselected"
+        android:splitTrack="false"
+        android:thumb="@drawable/ic_camera" />
+
+</RelativeLayout>
