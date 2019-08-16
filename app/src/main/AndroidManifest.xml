@@ -15,17 +15,16 @@
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning"
         tools:replace="android:icon">
-        <activity android:name=".MainControll">
+        <activity android:name=".bluetoothList"></activity>
+        <activity android:name=".MainControll"></activity>
+        <activity android:name=".device_connection">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".device_connection">
-
-        </activity>
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity" />
         <activity android:name=".DeviceList" />
         <activity android:name=".ledControl" />
     </application>

@@ -28,29 +28,26 @@
         android:elevation="5dp"/>
 
 
-    <androidx.appcompat.widget.LinearLayoutCompat
-        android:layout_width="match_parent"
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/selectBTDevice"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_margin="50dp"
         android:gravity="center"
-        android:orientation="horizontal">
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:text="Select Device"
+        android:textStyle="bold"
+        android:drawableLeft="@drawable/ic_bluetooth"
+        android:drawablePadding="7dp"
+        android:background="@android:color/transparent">
 
 
-        <androidx.appcompat.widget.AppCompatImageView
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:layout_marginEnd="10dp"
-
-            android:src="@drawable/ic_bluetooth" />
-        <androidx.appcompat.widget.AppCompatTextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="#282B1B"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:text="Select Device" />
 
 
-    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+    </androidx.appcompat.widget.AppCompatButton>
 </RelativeLayout>
